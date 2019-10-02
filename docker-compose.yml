@@ -4,8 +4,8 @@ services:
     container_name: droppy
     image: silverwind/droppy
     ports:
-      - '127.0.0.1:8989:8989'
+      - '8989:8989'
     volumes:
-      - ./config:/config
-      - ./data:/files
+      - /media/user/downloads1/Share/droppy/config:/config
+      - /media/user/downloads1/Share/droppy/files:/files
     restart: unless-stopped
